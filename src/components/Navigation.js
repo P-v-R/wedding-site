@@ -34,10 +34,9 @@ const variants = {
     <Col xs="3" className="nav-dropdown-link">
       <a className="dropdown-link" href={href}>
           <motion.div
+          variants={variants}
           className="dropdown-link"
-          animate={{opacity:0}}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }} >
+           >
             {text}
           </motion.div>
       </a>
@@ -48,12 +47,16 @@ const variants = {
     <div>
       <Navbar color="faded" light>
         <NavbarToggler onClick={toggleNavbar}>
+        <div
+          className="dropdown-link"
+          >
+            
         <Lottie
           options={defaultOptions}
           height={100}
-          width={100}
-        />
+          width={100}/>
           
+          </div>
         </NavbarToggler>
         <Collapse isOpen={!collapsed} navbar>
           <Container>

@@ -28,15 +28,14 @@ button.navbar-toggler{
   text-align: center;
 }
 
-
 .dropdown-link {
   position: relative;
-  color: #000;
+  color: #1d3557;
   text-decoration: none;
 }
 
 .dropdown-link:hover {
-  color: #000;
+  color: #1d3557;
 }
 
 .dropdown-link::before {
@@ -47,7 +46,7 @@ button.navbar-toggler{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #FFE8D6;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }

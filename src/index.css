@@ -2,7 +2,8 @@ body {
   margin: 0;
   font-family: 'Hina Mincho', serif;
   background-color: #B7B7A4;
-  height: 400vh;
+  /* height: 400vh; */
+  color:#1d3557;
 }
 
 code {

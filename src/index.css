@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: 'Hina Mincho', serif;
-  background-color: #B7B7A4;
+  background-image: linear-gradient(to bottom right, #b7b7a4 , #FFE8D6 );
+  /* background-color: #B7B7A4; */
   /* height: 400vh; */
   color:#1d3557;
 }

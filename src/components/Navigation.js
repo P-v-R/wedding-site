@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, Container, Row, Nav, NavItem, NavLink, Col } from 'reactstrap';
-import { motion }from "framer-motion"
+import { motion } from "framer-motion"
 import Lottie from 'react-lottie';
 import animationData from '../lotties/love-letter.json';
+import InfoModal from "./InfoModal"
 
 const Navigation = (props) => {
   const [collapsed, setCollapsed] = useState(true);
+  const [alert, setAlert] = useState(false);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
 
@@ -17,50 +19,50 @@ const Navigation = (props) => {
       preserveAspectRatio: "xMidYMid slice"
     }
   };
-  
+
   const links = [
     { href: '#where', text: 'Where' },
     { href: '#what', text: 'What' },
-    { href: '#when', text: 'When' },
+    { href: null, text: 'When', trig : trigger },
     { href: '#who', text: 'Who' },
   ];
 
 
-const variants = {
-  whileHover: { scale: 1.1 }
-}
+  const variants = {
+    whileHover: { scale: 1.1 }
+  }
 
-  const createNavItem = ({ href, text, className }) => (
-    <Col xs="3" className="nav-dropdown-link">
-      <a className="dropdown-link" href={href}>
-          <motion.div
-          variants={variants}
-          className="dropdown-link"
-           >
-            {text}
-          </motion.div>
+
+
+  const createNavItem = ({ href, text, trig }) => (
+    <Col xs="3" className="nav-dropdown-link" key={text}>
+      <a className="dropdown-link" href={href} onClick={trig}>
+          {text}
       </a>
     </Col>
   );
-  
+
+  function trigger(){
+    console.log("triiiiger")
+    setAlert(alert => !alert)
+  }
+
   return (
     <div>
+      {alert && <InfoModal trigger={trigger} />}
       <Navbar color="faded" light>
         <NavbarToggler onClick={toggleNavbar}>
-        <div
-          className="dropdown-link"
-          >
-            
-        <Lottie
-          options={defaultOptions}
-          height={100}
-          width={100}/>
-          
+          <div
+            className="dropdown-link">
+            <Lottie
+              options={defaultOptions}
+              height={100}
+              width={100} />
           </div>
         </NavbarToggler>
         <Collapse isOpen={!collapsed} navbar>
           <Container>
-            <Row >
+            <Row>
               {links.map(createNavItem)}
             </Row>
           </Container>

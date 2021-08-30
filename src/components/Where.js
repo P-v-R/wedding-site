@@ -37,24 +37,24 @@ function Where() {
               <Col className="where-links"><h2>Where to Eat</h2></Col>
             </Row>
             <Row >
-              <Col className="where-links"><h4>-place</h4></Col>
-              <Col className="where-links"><h4>-hotel</h4></Col>
-              <Col className="where-links"><h4>-yumyums</h4></Col>
+              <Col className="where-links"><h4>-Hiking</h4></Col>
+              <Col className="where-links"><h4>-hotel DingDong</h4></Col>
+              <Col className="where-links"><h4>-MacDons</h4></Col>
             </Row>
             <Row >
-              <Col className="where-links"><h4>-place</h4></Col>
-              <Col className="where-links"><h4>-hotel</h4></Col>
-              <Col className="where-links"><h4>-yumyums</h4></Col>
+              <Col className="where-links"><h4>-Pool</h4></Col>
+              <Col className="where-links"><h4>-Motel 55</h4></Col>
+              <Col className="where-links"><h4>-Burger King</h4></Col>
             </Row>
             <Row >
-              <Col className="where-links"><h4>-place</h4></Col>
-              <Col className="where-links"><h4>-hotel</h4></Col>
-              <Col className="where-links"><h4>-yumyums</h4></Col>
+              <Col className="where-links"><h4>-Beach</h4></Col>
+              <Col className="where-links"><h4>-Red Roof In</h4></Col>
+              <Col className="where-links"><h4>-yumyum donuts</h4></Col>
             </Row>
             <Row >
-              <Col className="where-links"><h4>-place</h4></Col>
-              <Col className="where-links"><h4>-hotel</h4></Col>
-              <Col className="where-links"><h4>-yumyums</h4></Col>
+              <Col className="where-links"><h4>-Museam</h4></Col>
+              <Col className="where-links"><h4>-AirBnB</h4></Col>
+              <Col className="where-links"><h4>-Seafood Buffet</h4></Col>
             </Row>
             <Row >
               <br></br>

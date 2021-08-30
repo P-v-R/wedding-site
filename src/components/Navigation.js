@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Collapse, Navbar, NavbarToggler, Container, Row, Nav, NavItem, NavLink, Col } from 'reactstrap';
-import { motion } from "framer-motion"
+import { Collapse, Navbar, NavbarToggler, Container, Row, Col } from 'reactstrap';
 import Lottie from 'react-lottie';
 import animationData from '../lotties/love-letter.json';
 import InfoModal from "./InfoModal"
@@ -26,12 +25,6 @@ const Navigation = (props) => {
     { href: null, text: 'When', trig : trigger },
     { href: '#who', text: 'Who' },
   ];
-
-
-  const variants = {
-    whileHover: { scale: 1.1 }
-  }
-
 
 
   const createNavItem = ({ href, text, trig }) => (

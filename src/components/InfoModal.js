@@ -9,12 +9,10 @@ const InfoModal = ({ trigger }) => {
 
   const toggle = () => trigger();
 
-  const popupStyle = {
-    width: 500,
-  }
+  
 
   return (
-    <div>
+    <div onClick={() => setModal(!modal)}>
       <Modal isOpen={modal} toggle={toggle} className="popup">
         <ModalBody className="popup-image">
           <Container className = "popup">

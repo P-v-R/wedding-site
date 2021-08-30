@@ -18,6 +18,11 @@ const InfoModal = ({ trigger }) => {
           <Container className = "popup">
             <Row>
               <Col>
+                <h1>💍👰🏻‍♀️🤵🏻‍♂️🍸</h1>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
                 Where : The Hotel Ding Dong 
               </Col>
             </Row>
@@ -33,7 +38,7 @@ const InfoModal = ({ trigger }) => {
             </Row>
             <Row>
               <Col>
-                NO KIDS, NO LAMES
+                <u>NO KIDS, NO LAMES</u>
               </Col>
             </Row>
           </Container>

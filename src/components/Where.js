@@ -6,6 +6,8 @@ import "./styles.css"
 import { Container, Row, Col } from "reactstrap"
 import { Parallax } from 'react-parallax';
 import matches from "../assets/gradi.svg"
+import Fade from 'react-reveal/Fade';
+
 
 function Where() {
 
@@ -17,44 +19,52 @@ function Where() {
             <Media src={where} />
           </Row>
           <Row className="whereAddress">
-            <Col className="where-links"><h2>HOTEL DINGDONG : 123 address Ave, 90210 </h2></Col>
+            {/* <Col className="where-links"><h2>HOTEL DINGDONG : 123 address Ave, 90210 </h2></Col> */}
+            <Fade right big cascade  >
+              <h2>HOTEL DINGDONG : 123 address Ave, 90210</h2>
+            </Fade>
           </Row>
+
           <Row className="whereWhen">
-            <Col className="where-links"><h3>5:00pm SHARP! </h3></Col>
+            <Fade right big cascade delay={750} >
+              <h2>6:00pm Sharp!</h2>
+            </Fade>
           </Row>
-          <Row >
-            <Col className="where-links"><h2>Things To Do</h2></Col>
-            <Col className="where-links"><h2>Places To Stay</h2></Col>
-            <Col className="where-links"><h2>Where to Eat</h2></Col>
-          </Row>
-          <Row >
-            <Col className="where-links"><h4>-place</h4></Col>
-            <Col className="where-links"><h4>-hotel</h4></Col>
-            <Col className="where-links"><h4>-yumyums</h4></Col>
-          </Row>
-          <Row >
-            <Col className="where-links"><h4>-place</h4></Col>
-            <Col className="where-links"><h4>-hotel</h4></Col>
-            <Col className="where-links"><h4>-yumyums</h4></Col>
-          </Row>
-          <Row >
-            <Col className="where-links"><h4>-place</h4></Col>
-            <Col className="where-links"><h4>-hotel</h4></Col>
-            <Col className="where-links"><h4>-yumyums</h4></Col>
-          </Row>
-          <Row >
-            <Col className="where-links"><h4>-place</h4></Col>
-            <Col className="where-links"><h4>-hotel</h4></Col>
-            <Col className="where-links"><h4>-yumyums</h4></Col>
-          </Row>
-          <Row >
-            <br></br>
-          </Row>
-          <Row>
-            <Col className="where-links" >
-            <Media src={map} style={{size:75}}/>
-            </Col>
-          </Row>
+          <Fade right big cascade delay={1000} >
+            <Row >
+              <Col className="where-links"><h2>Things To Do</h2></Col>
+              <Col className="where-links"><h2>Places To Stay</h2></Col>
+              <Col className="where-links"><h2>Where to Eat</h2></Col>
+            </Row>
+            <Row >
+              <Col className="where-links"><h4>-place</h4></Col>
+              <Col className="where-links"><h4>-hotel</h4></Col>
+              <Col className="where-links"><h4>-yumyums</h4></Col>
+            </Row>
+            <Row >
+              <Col className="where-links"><h4>-place</h4></Col>
+              <Col className="where-links"><h4>-hotel</h4></Col>
+              <Col className="where-links"><h4>-yumyums</h4></Col>
+            </Row>
+            <Row >
+              <Col className="where-links"><h4>-place</h4></Col>
+              <Col className="where-links"><h4>-hotel</h4></Col>
+              <Col className="where-links"><h4>-yumyums</h4></Col>
+            </Row>
+            <Row >
+              <Col className="where-links"><h4>-place</h4></Col>
+              <Col className="where-links"><h4>-hotel</h4></Col>
+              <Col className="where-links"><h4>-yumyums</h4></Col>
+            </Row>
+            <Row >
+              <br></br>
+            </Row>
+            <Row>
+              <Col className="where-links" >
+                <Media src={map} style={{ size: "75%" }} />
+              </Col>
+            </Row>
+          </Fade>
         </Container>
 
       </div>

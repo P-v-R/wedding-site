@@ -61,7 +61,7 @@ function Where() {
             </Row>
             <Row>
               <Col className="where-links" >
-                <Media src={map} style={{ size: "75%" }} />
+                {/* <Media src={map} style={{ size: "75%" }} /> */}
               </Col>
             </Row>
           </Fade>

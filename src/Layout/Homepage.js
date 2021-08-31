@@ -10,7 +10,7 @@ import Filler from "../components/Filler";
 function Homepage() {
   return (
     <div>
-      <Landing />
+      {/* <Landing /> */}
       <ParaBg />
       <Where />
       <ParaBgTwo />

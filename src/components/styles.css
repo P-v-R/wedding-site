@@ -15,13 +15,14 @@ button.navbar-toggler{
   margin-left: auto;
   margin-right: auto;
   border: none;
+  border-bottom: 1px solid lightblue;
 }
 
 .LandingImg{
   margin-left: auto;
   margin-right: auto;
-  width:70%;
-  margin-bottom: 60vh;
+  width:70vw;
+  margin-bottom: 30vh;
 }
 
 .nav-dropdown-link{
@@ -120,4 +121,8 @@ h1.cardtext::before {
 
 h1.cardtext:hover::before {
   transform: scaleX(1);
+}
+
+img.media{
+  margin: 0;
 }

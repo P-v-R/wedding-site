@@ -11,7 +11,7 @@ function Landing() {
     
     <div className="LandingImg">
       <Media src={pa} />
-      <h1 style={{marginBottom:"9%" , fontSize:"5vw"}}>
+      <h1 style={{marginBottom:"4%" , fontSize:"5vw"}}>
         <Fade right big cascade >
           Are Having A
         </Fade>

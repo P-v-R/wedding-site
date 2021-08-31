@@ -1,5 +1,5 @@
 
-import where from "../assets/where.svg"
+import where from "../assets/where2.svg"
 import map from "../assets/map.png"
 import { Media } from 'reactstrap';
 import "./styles.css"
@@ -16,7 +16,7 @@ function Where() {
       <div style={{ height: 1400 }}>
         <Container id="where" className="where-container">
           <Row className="whereImg">
-            <Media src={where} />
+            <Media src={where} style={{width:"90%"}}/>
           </Row>
           <Row className="whereAddress">
             {/* <Col className="where-links"><h2>HOTEL DINGDONG : 123 address Ave, 90210 </h2></Col> */}

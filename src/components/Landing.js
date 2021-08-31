@@ -1,5 +1,5 @@
 import pa from "../assets/p-a2-01.svg"
-import wedding from "../assets/caliWed4.svg"
+import wedding from "../assets/caliWed1.svg"
 import { Media } from 'reactstrap';
 import "./styles.css"
 import Fade from 'react-reveal/Fade';

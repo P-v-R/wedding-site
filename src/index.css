@@ -1,3 +1,10 @@
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
   font-family: 'Hina Mincho', serif;
@@ -5,8 +12,10 @@ body {
   /* background-color: #B7B7A4; */
   /* height: 400vh; */
   color:#1d3557;
+ 
 }
 
 code {
   font-family: 'Hina Mincho', serif;
+  
 }

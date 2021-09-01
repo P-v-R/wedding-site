@@ -44,6 +44,13 @@ const Navigation = (props) => {
     <div>
       {alert && <InfoModal trigger={trigger} />}
       <Navbar color="faded" light>
+        <Collapse isOpen={!collapsed} navbar>
+          <Container>
+            <Row>
+              {links.map(createNavItem)}
+            </Row>
+          </Container>
+        </Collapse>
         <NavbarToggler onClick={toggleNavbar}>
           <div
             className="dropdown-link">
@@ -53,13 +60,6 @@ const Navigation = (props) => {
               width={100} />
           </div>
         </NavbarToggler>
-        <Collapse isOpen={!collapsed} navbar>
-          <Container>
-            <Row>
-              {links.map(createNavItem)}
-            </Row>
-          </Container>
-        </Collapse>
       </Navbar>
     </div>
   );

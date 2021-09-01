@@ -16,14 +16,21 @@ button.navbar-toggler{
   margin-right: auto;
   border: none;
   border-bottom: 1px solid lightblue;
+  margin-bottom: 10vh;
 }
 
 .LandingImg{
   margin-left: auto;
   margin-right: auto;
   width:70vw;
-  margin-top: 20vh;
-  margin-bottom: 40vh;
+  /* margin-bottom: 100%; */
+}
+.MobileLandingImg{
+  margin-left: auto;
+  margin-right: auto;
+  width:90vw;
+  margin-top: 50%;
+  margin-bottom: 15vh;
 }
 
 .nav-dropdown-link{

@@ -1,6 +1,6 @@
 
 import where from "../assets/where2.svg"
-import map from "../assets/map.png"
+// import map from "../assets/map.png"
 import { Media } from 'reactstrap';
 import "./styles.css"
 import { Container, Row, Col } from "reactstrap"

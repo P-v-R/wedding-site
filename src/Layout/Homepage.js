@@ -1,4 +1,4 @@
-import Landing from "../components/Landing";
+// import Landing from "../components/Landing";
 import ParaBg from "../components/ParaBg";
 import ParaBgTwo from "../components/ParaBgTwo";
 import Where from "../components/Where";

@@ -11,7 +11,6 @@ function ParaBg() {
     position: "absolute",
     top: "50%",
     left: "20%",
-
   };
 
 
@@ -21,10 +20,11 @@ function ParaBg() {
         <Fade cascade delay={750}>
           <div
             style={insideStyles}>
-            <h1 className="cardtext">
+              <a href="https://9r0d4g8jfji.typeform.com/to/C4r4Zibb" style={{textDecoration:"none"}}>
+            <h1 className="cardtext" >
               RSVP
               </h1>
-              
+              </a>
               </div>
         </Fade>
       </div>

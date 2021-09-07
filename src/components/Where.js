@@ -10,13 +10,12 @@ import Fade from 'react-reveal/Fade';
 
 
 function Where() {
-
   return (
     <Parallax bgImage={matches} strength={300}>
       <div style={{ height: 1400 }}>
         <Container id="where" className="where-container">
           <Row className="whereImg">
-            <Media src={where} style={{width:"90%"}}/>
+            <Media src={where} style={{ width: "90%" }} />
           </Row>
           <Row className="whereAddress">
             {/* <Col className="where-links"><h2>HOTEL DINGDONG : 123 address Ave, 90210 </h2></Col> */}
@@ -24,7 +23,6 @@ function Where() {
               <h2>HOTEL DINGDONG : 123 address Ave, 90210</h2>
             </Fade>
           </Row>
-
           <Row className="whereWhen">
             <Fade right big cascade delay={750} >
               <h2>6:00pm Sharp!</h2>
@@ -66,7 +64,6 @@ function Where() {
             </Row>
           </Fade>
         </Container>
-
       </div>
     </Parallax>
 

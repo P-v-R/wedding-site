@@ -2,7 +2,12 @@ import { Parallax } from 'react-parallax';
 import matches from "../assets/matches.jpg"
 import Fade from 'react-reveal/Fade';
 
-
+/**
+ * ParaBg
+ *  - Paralax segment of page that shows a picture in the background 
+ *    and a button that goes to the online RSVP form 
+ * 
+ */
 function ParaBg() {
 
   const insideStyles = {
@@ -14,20 +19,23 @@ function ParaBg() {
   };
 
 
+  function rsvp(){
+    window.open("https://9r0d4g8jfji.typeform.com/to/C4r4Zibb")
+  }
   return (
     <Parallax bgImage={matches} strength={300}>
-      <div style={{ height: 900 }}>
         <Fade cascade delay={750}>
+      <div style={{ height: 900 }}>
           <div
             style={insideStyles}>
-              <a href="https://9r0d4g8jfji.typeform.com/to/C4r4Zibb" style={{textDecoration:"none"}}>
-            <h1 className="cardtext" >
+              
+            <h1 className="cardtext" onClick={rsvp} >
               RSVP
-              </h1>
-              </a>
-              </div>
-        </Fade>
+            </h1>
+              
+        </div>
       </div>
+        </Fade>
     </Parallax>)
 
 }

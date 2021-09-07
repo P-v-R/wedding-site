@@ -1,16 +1,21 @@
 import "./styles.css";
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 
+let filler = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 function Filler() {
 
   return (
-    <div className="LandingImg">
-      <h1 style={{margin:"35%" , fontSize:"5vw"}}>
+    <div className="fillerBg">
+      <div className="testBox" >
         <Fade right big cascade >
-          Filler
+          <h1>Additional info on event</h1>
         </Fade>
-      </h1>
+        <Zoom delay = {1500}>
+          <h3>`${filler + filler}`</h3>
+        </Zoom>
+      </div>
     </div>
   )
 }

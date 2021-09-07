@@ -13,6 +13,10 @@ function ParaBgTwo() {
 
   };
 
+  function regis(){
+    console.log("clicked")
+    window.open("https://www.google.com")
+  }
 
   return (
     <Parallax bgImage={still} strength={300}>
@@ -20,7 +24,7 @@ function ParaBgTwo() {
         <div style={{ height: 1200 }}>
           <div
             style={insideStyles}
-          ><h1 className="cardtext">Registry</h1></div>
+          ><h1 className="cardtext" onClick={regis}>Registry</h1></div>
         </div>
       </Fade>
     </Parallax>)

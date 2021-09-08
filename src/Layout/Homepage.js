@@ -10,7 +10,7 @@ import Filler from "../components/Filler";
 function Homepage() {
   return (
     <div>
-      {/* <Landing /> */}
+      {/* <Landing />  moved to app.js so I can load different landing for web and mobile*/} 
       <ParaBg />
       <Where />
       <ParaBgTwo />

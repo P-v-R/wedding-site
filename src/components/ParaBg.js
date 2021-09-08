@@ -24,18 +24,16 @@ function ParaBg() {
   }
   return (
     <Parallax bgImage={matches} strength={300}>
-        <Fade cascade delay={750}>
+      <Fade cascade delay={750}>
       <div style={{ height: 900 }}>
           <div
-            style={insideStyles}>
-              
+            style={insideStyles}>  
             <h1 className="cardtext" onClick={rsvp} >
               RSVP
-            </h1>
-              
+            </h1>  
         </div>
       </div>
-        </Fade>
+      </Fade>
     </Parallax>)
 
 }

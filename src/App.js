@@ -38,7 +38,6 @@ function App() {
     <ParallaxProvider>
       {isMobile && <MobileLanding/>}
       {!isMobile && <Landing/>}
-      
       <Fade>
       <Navigation /> 
       </Fade> 
